@@ -6,7 +6,10 @@
 - Rename .env.example to .env and change the DB config and also APP_URL,ASSET_URL to your project root folder
 - Run 'composer install' command to install the packages
 - Run 'npm install' to install the frontend
-- On a separate terminal run 'npm run dev' to render the frontend
+- On a separate terminal run 'npm run dev' to render the frontend:
+```
+npm run dev
+```
 - On a separate terminal run 'npm run build' to build the assets on the public folder
 - To seed the application with dummy data run: php artisan db:seed --class=UserSeeder. Do note it will take awhile since <routprojectfolder>/database/seeders/UserSeeder.php has been set a default value of 1,000,000
 - To use laravel telescope, a change has to be made on: <routprojectfolder>/vendor/laravel/telescope/resources/views/layout.blade.php. The change 
