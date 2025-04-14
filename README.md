@@ -20,6 +20,10 @@ npm run dev
 ```
 npm run build
 ```
+- To create the database from the defined migrations, run:
+```
+php artisan migrate
+```
 - To seed the application with dummy data run: php artisan db:seed --class=UserSeeder. Do note it will take awhile since <routprojectfolder>/database/seeders/UserSeeder.php has been set a default value of 1,000,000:
 ```
 php artisan db:seed --class=UserSeeder
