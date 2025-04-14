@@ -26,6 +26,11 @@ php artisan migrate
 ```
 - To seed the application with dummy data run: php artisan db:seed --class=UserSeeder. Do note it will take awhile since <routprojectfolder>/database/seeders/UserSeeder.php has been set a default value of 1,000,000:
 ```
+If there is an error with the telescope mirgration, You can run it separately as follows. Do verfiy the file name is correct on the migrations folder:
+```
+php artisan migrate --path=/database/migrations/2025_04_14_111454_create_telescope_entries_table.php
+```
+
 php artisan db:seed --class=UserSeeder
 ```
 - To use laravel telescope, a change has to be made on: <routprojectfolder>/vendor/laravel/telescope/resources/views/layout.blade.php.
