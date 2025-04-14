@@ -8,5 +8,17 @@
 - Run 'npm install' to install the frontend
 - On a separate terminal run 'npm run dev' to render the frontend
 - On a separate terminal run 'npm run build' to build the assets on the public folder
-- Access the application on the browser:
+- To seed the application with dummy data run: php artisan db:seed --class=UserSeeder. Do note it will take awhile since <routprojectfolder>/database/seeders/UserSeeder.php has been set a default value of 1,000,000
+- To use laravel telescope, a change has to be made on: <routprojectfolder>/vendor/laravel/telescope/resources/views/layout.blade.php. The change 
+<script>
+    window.Telescope = @json($telescopeScriptVariables);
+</script>
+to
+<script>
+    window.Telescope = @json($telescopeScriptVariables);
+    window.Telescope.path = 'faoassignment/telescope'; 
+</script>
+- Access the application on the browser
 http://localhost/faoassignment/performance/view
+Access Laravel Telescope:
+http://localhost/faoassignment/telescope
