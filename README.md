@@ -36,9 +36,10 @@ to
 ```
 <script>
     window.Telescope = @json($telescopeScriptVariables);
-    window.Telescope.path = 'faoassignment/telescope'; 
+    window.Telescope.path = 'faoassignment/telescope'; <!-- faoassignment is the project route folder -->
 </script>
 ```
+
 - Access the application on the browser
 http://localhost/faoassignment/performance/view
 - Access Laravel Telescope:
