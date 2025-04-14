@@ -44,3 +44,5 @@ to
 http://localhost/faoassignment/performance/view
 - Access Laravel Telescope:
 http://localhost/faoassignment/telescope
+
+- The methods are defined in: <projectroutefolder>/app/Http/Controllers/UsersController.php
