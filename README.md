@@ -8,7 +8,10 @@
 ```
 composer install
 ```
-- Run 'npm install' to install the frontend
+- Run 'npm install' to install the frontend:
+```
+npm install
+```
 - On a separate terminal run 'npm run dev' to render the frontend:
 ```
 npm run dev
@@ -38,5 +41,5 @@ to
 ```
 - Access the application on the browser
 http://localhost/faoassignment/performance/view
-Access Laravel Telescope:
+- Access Laravel Telescope:
 http://localhost/faoassignment/telescope
